@@ -102,6 +102,7 @@ print(f"The letter that occurred the least is {least_occurred}")
 print("*"*75)
 
 # Output what the percentage of the string each character is, again in alphabetical
+letters_percent = {}
 for letr in letters:
-    letters[letr] = round((letters[letr]/len(random_string))*100, 4)     #rounded for simplicity
-print(sorted(letters.items()))
+    letters_percent[letr] = round((letters[letr]/len(random_string))*100, 3)     #rounded for simplicity
+print(sorted(letters_percent.items()))
